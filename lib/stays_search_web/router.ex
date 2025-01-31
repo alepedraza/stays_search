@@ -7,6 +7,8 @@ defmodule StaysSearchWeb.Router do
 
   scope "/api", StaysSearchWeb do
     pipe_through :api
+
+    get "/stays_finder", Finder, :index
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development

@@ -11,10 +11,10 @@ defmodule StaysSearch.CityApi do
         |> then(&{:ok, &1})
 
       {:ok, %HTTPoison.Response{status_code: status_code, body: body}} ->
-        {:error, "Error en la API: #{status_code} - #{body}"}
+        {:error, "Error API: #{status_code} - #{body}"}
 
       {:error, reason} ->
-        {:error, "Error al llamar a la API: #{reason}"}
+        {:error, "Error API: #{reason}"}
     end
   end
 
