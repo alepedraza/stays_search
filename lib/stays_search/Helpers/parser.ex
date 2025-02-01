@@ -4,10 +4,10 @@ defmodule StaysSearch.Helpers.Parser do
 
     ## Examples
 
-      iex> StayFinder.Helpers.Parser.number("1.2")
+      iex> StaysSearch.Helpers.Parser.number("1.2")
       1.2
 
-      iex> StayFinder.Helpers.Parser.number("3")
+      iex> StaysSearch.Helpers.Parser.number("3")
       3
   """
   @spec number(String.t()) :: {:ok, number()} | {:error, String.t()}
@@ -29,7 +29,7 @@ defmodule StaysSearch.Helpers.Parser do
 
     ## Examples
 
-      iex> StayFinder.Helpers.Parser.normalize_string("Léon")
+      iex> StaysSearch.Helpers.Parser.normalize_string("Léon")
       "leon"
   """
   @spec normalize_string(String.t()) :: String.t()
