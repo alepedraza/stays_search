@@ -10,9 +10,9 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 The REST API to find accommodations by city.
 
 ### Example request
-`GET /api/staysSearch?city=México`
+`GET /api/staysSearch?city=mexico`
 
-    http://localhost:4000/api/StaysSearch?city=México
+    http://localhost:4000/api/staysSearch?city=mexico
     http://localhost:4000/api/staysSearch?city=mexico&amenities=%5B%22Wi-Fi%22%5D
     http://localhost:4000/api/staysSearch?city=mexico&maxPrice=2000&ratings=4.5
     http://localhost:4000/api/staysSearch?city=mexico&amenities=%5B%22Wi-Fi%22%5D&maxPrice=2000&minPrice=200.5&ratings=4.5
